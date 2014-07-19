@@ -74,11 +74,30 @@
 </div>
 <div class='clearfix'></div>
 <div class='large-12 column trash text-center'>
-<a href='/'>
-<span>
-<i>Donate</i>
-</span>
-</a>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="4LZZHEPTNFXCY">
+				<table class="large-12">
+							<tr>
+								<td><input type="hidden" name="on0" value="All licenses are for single use only">All licenses are for single use only</td>
+							</tr>
+							<tr><td>
+								<select name="os0">
+									<option value="Personal">Personal $10.00 USD</option>
+									<option value="Commercial">Commercial $50.00 USD</option>
+									<option value="Enterprise">Enterprise $200.00 USD</option>
+									<option value="Open Source">Open Source $0.00 USD</option>
+								</select>
+							</td></tr>
+							<tr>
+								<td class="text-center">
+									<input type="hidden" name="currency_code" value="USD">
+									<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+								</td>
+							</tr>
+					</table>
+				</form>
 </div>
 </div>
 <!-- right column, canvas -->
